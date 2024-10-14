@@ -31,7 +31,7 @@ msrc = mavutil.mavlink_connection('tcp:localhost:{}'.format(args.srcport), plann
                                   notimestamps=True,
                                   robust_parsing=True)
 
-mdst = mavutil.mavlink_connection('tcp:localhost:{}'.format(args.dstport), planner_format=False,
+mdst = mavutil.mavlink_connection('wsserver:localhost:{}'.format(args.dstport), planner_format=False,
                                   notimestamps=True,
                                   robust_parsing=True)
 
